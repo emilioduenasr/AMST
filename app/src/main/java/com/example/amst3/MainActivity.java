@@ -12,7 +12,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.amst3.Fragments.fragmentPersonas;
+import com.example.amst3.Fragments.fragmentCalendarView;
+import com.example.amst3.Fragments.fragmentMapsView;
+import com.example.amst3.Fragments.fragmentVideoView;
 import com.example.amst3.Fragments.mainFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -60,10 +62,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentTransaction.replace(R.id.container, new mainFragment());
             fragmentTransaction.commit();
         }
-        if(menuItem.getItemId() == R.id.personas){
+        if(menuItem.getItemId() == R.id.videoView){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container, new fragmentPersonas());
+            fragmentTransaction.replace(R.id.container, new fragmentVideoView());
+            fragmentTransaction.commit();
+        }
+        if(menuItem.getItemId() == R.id.calendarView){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new fragmentCalendarView());
+            fragmentTransaction.commit();
+        }
+        if(menuItem.getItemId() == R.id.googleMapsView){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new fragmentMapsView());
             fragmentTransaction.commit();
         }
         return false;

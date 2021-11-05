@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.amst3.R;
 
-public class fragmentPersonas extends Fragment {
+public class fragmentMapsView extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.personas_fragment, container, false);
+        View view = inflater.inflate(R.layout.maps_fragment, container, false);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 }

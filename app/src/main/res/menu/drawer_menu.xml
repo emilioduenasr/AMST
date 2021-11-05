@@ -9,24 +9,20 @@
             </item>
 
             <item
-                android:id="@+id/personas"
-                android:title="Personas"
+                android:id="@+id/videoView"
+                android:title="Video view"
                 android:icon="@drawable/ic_baseline_people_24">
             </item>
-        </menu>
-    </item>
 
-    <item android:title="Secundario">
-        <menu>
             <item
-                android:id="@+id/home2"
-                android:title="Home"
-                android:icon="@drawable/ic_baseline_home_24">
+                android:id="@+id/calendarView"
+                android:title="Calendar view"
+                android:icon="@drawable/ic_baseline_people_24">
             </item>
 
             <item
-                android:id="@+id/personas2"
-                android:title="Personas"
+                android:id="@+id/googleMapsView"
+                android:title="Google Maps"
                 android:icon="@drawable/ic_baseline_people_24">
             </item>
         </menu>
