@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:padding="2dp"
+    android:paddingLeft="2dp"
+    android:paddingTop="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="2dp">
 
-    <VideoView
-        android:id="@+id/video"
-        android:layout_width="wrap_content"
-        android:layout_height="320dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+    <TextView
+        android:id="@+id/txtVideo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:autoPlay="true"
-        app:showYouTubeButton="false"
-        app:videoId="v6kEanzJhpg" />
+        android:layout_marginTop="100dp"
+        android:paddingTop="5dp"
+        android:text="@string/txt_video_la_vida_en_espol"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/youTubePlayerView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="2dp" />
 
-</LinearLayout>
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:autoPlay="true"
+        app:layout_constraintTop_toBottomOf="@+id/txtVideo"
+        app:showYouTubeButton="false"
+        app:videoId="v6kEanzJhpg"
+        tools:layout_editor_absoluteX="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
