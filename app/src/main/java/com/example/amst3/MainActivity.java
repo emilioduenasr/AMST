@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
     NavigationView navigationView;
 
-    //Variables para crear el fragment prinicipal
+    //Variables para crear el fragment principal
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
 

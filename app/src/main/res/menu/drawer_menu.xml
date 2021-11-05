@@ -11,19 +11,19 @@
             <item
                 android:id="@+id/videoView"
                 android:title="Video view"
-                android:icon="@drawable/ic_baseline_people_24">
+                android:icon="@drawable/ic_baseline_video_library_24">
             </item>
 
             <item
                 android:id="@+id/calendarView"
                 android:title="Calendar view"
-                android:icon="@drawable/ic_baseline_people_24">
+                android:icon="@drawable/ic_baseline_calendar_today_24">
             </item>
 
             <item
                 android:id="@+id/googleMapsView"
                 android:title="Google Maps"
-                android:icon="@drawable/ic_baseline_people_24">
+                android:icon="@drawable/ic_baseline_map_24">
             </item>
         </menu>
     </item>

@@ -16,6 +16,6 @@ public class fragmentMapsView extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.maps_fragment, container, false);
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return view;
     }
 }
