@@ -4,5 +4,8 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="txt_amst_grupo_3">AMST-Grupo 3</string>
+    <string name="txt_name1">Alfonso Enriquez</string>
+    <string name="txt_name2">Emilio Dueñas</string>
+    <string name="txt_name3">Carlos Tupac</string>
     <string name="txt_video_la_vida_en_espol">Video - La vida en Espol</string>
 </resources>
